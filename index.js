@@ -2,6 +2,7 @@
 const numbers =[];
 for(let i=0;i<101;i++){
     numbers.push(i);
+    document.querySelector(".inner-card").innerHTML += "<button class='out m-1'>"+i+"</button>";
 }
 console.log("Original list of numbers:", numbers);
 
@@ -14,11 +15,12 @@ function getRandomElement(arr) {
 
 while (numbers.length > 0) {
 
-    document.getElementById("btn-1").addEventListener("click",displayer); 
+    document.getElementById("card-1").addEventListener("click",displayer); 
     button.addEventListener("click", calculateBMI); 
 }
 function displayer()
 {
+    document.querySelector("h").classList.add("heading");
     const choiceElement = getRandomElement(numbers);
     console.log("Chosen element:", choiceElement);
     if(choiceElement != undefined){document.querySelector("h").innerHTML=choiceElement;}
@@ -27,6 +29,6 @@ function displayer()
     
         numbers.splice(index, 1);
         poppedList.push(choiceElement);
-        document.querySelector("h2").innerHTML=poppedList;
+        document.querySelectorAll("button")[choiceElement].classList.add("c-a");
 
 }
