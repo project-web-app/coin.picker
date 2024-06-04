@@ -12,7 +12,7 @@
     border-radius: 10px;
 }
 #card-1{
-    height:300px;
+    height:200px;
     border-radius: 20px;
     background-color: antiquewhite;
     
@@ -34,18 +34,30 @@
 }
 .out{
     font-family: Roboto;
-    font-weight: 700px;
     border-radius: 10px;
-    border: solid blue;
-    border-width: 2px;
-    padding: 10px;
+    border: solid rgb(123, 123, 126);
+    border-width: 1.5px;
+    padding: 7px;
+    width: 45px;
+    height: 40px;
 }
 .p-1{
     color: black;
     font-family: Roboto;
 }
 #card-2{
-    height:400px;
+    height:500px;
     border-radius: 20px;
     background-color: antiquewhite;
+}
+.inner-card{
+    background-color: antiquewhite;
+    height: 700px;
+}
+.c-a{
+    background-color: orange;
+    color: white;
+}
+.out.link{
+    cursor: pointer !important;
 }
